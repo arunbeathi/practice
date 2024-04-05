@@ -16,5 +16,10 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage ('Clean install'){
+            steps {
+                sh 'mvn clean install'
+            }
+        }
     }
 }
